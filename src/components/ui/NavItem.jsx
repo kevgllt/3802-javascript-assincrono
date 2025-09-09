@@ -15,10 +15,17 @@ const NavLink = styled.a`
   }
 `;
 
-const NavItem = ({ href, img }) => {
+const ImageContent = styled.img`
+  width: 3.2rem;
+  height: 3.2rem;
+`;
+
+const NavItem = ({ href, img, children }) => {
   return (
     <NavItemContainer>
-      <NavLink href={href}>{img}</NavLink>
+      <NavLink href={href}>
+        { img ? (<ImageContent src={img} alt="icon" />) : (children) }
+      </NavLink>
     </NavItemContainer>
   );
 }

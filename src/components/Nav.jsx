@@ -15,11 +15,11 @@ const Nav = () => {
   return (
     <NavContainer>
       <ul>
-        <NavItem href="#">Publicar</NavItem>
-        <NavItem href="#">{FeedImg}</NavItem>
-        <NavItem href="#">{AccountCircleImg}</NavItem>
-        <NavItem href="#">{InfoImg}</NavItem>
-        <NavItem href="#">{LogoutImg}</NavItem>
+        <NavItem href="#" children={'Publicar'} />
+        <NavItem href="#" img={FeedImg} />
+        <NavItem href="#" img={AccountCircleImg} />
+        <NavItem href="#" img={InfoImg} />
+        <NavItem href="#" img={LogoutImg} />
       </ul>
     </NavContainer>
   );
