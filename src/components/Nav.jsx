@@ -6,9 +6,12 @@ import InfoImg from '../assets/info.svg'
 import LogoutImg from '../assets/logout.svg'
 
 const NavContainer = styles.nav`
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
+  ul {  
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 3rem;
+  }
 `;
 
 const Nav = () => {
@@ -16,10 +19,10 @@ const Nav = () => {
     <NavContainer>
       <ul>
         <NavItem href="#" children={'Publicar'} />
-        <NavItem href="#" img={FeedImg} />
-        <NavItem href="#" img={AccountCircleImg} />
-        <NavItem href="#" img={InfoImg} />
-        <NavItem href="#" img={LogoutImg} />
+        <NavItem href="#" img={FeedImg} text={'Feed'} />
+        <NavItem href="#" img={AccountCircleImg} text={'Perfil'} />
+        <NavItem href="#" img={InfoImg} text={'Sobre nós'} />
+        <NavItem href="#" img={LogoutImg} text={'Sair'} />
       </ul>
     </NavContainer>
   );

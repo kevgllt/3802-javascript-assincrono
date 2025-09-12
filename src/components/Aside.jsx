@@ -3,16 +3,16 @@ import Logo from '../assets/Logo.svg'
 import Nav from './Nav'
 
 const AsideContainer = styles.aside`
-  width: 300px;
+  width: 17.7rem;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #171D1F;
   border-right: 1px solid #ddd;
 `;
 
 const LogoImage = styles.img`
   width: 100%;
   height: auto;
-  margin-bottom: 2rem;
+  margin: 2.2rem auto;
 `;
 
 
